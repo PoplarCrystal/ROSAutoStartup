@@ -1,0 +1,7 @@
+#!/bin/bash
+ 
+/usr/sbin/ros_stop
+sleep 3
+/usr/sbin/ros_start
+ 
+exit 0

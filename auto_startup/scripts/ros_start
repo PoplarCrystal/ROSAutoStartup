@@ -1,0 +1,5 @@
+#!/bin/bash
+# source /opt/ros/melodic/setup.bash
+source `dirname $0`/../../../devel/setup.bash
+
+roslaunch testbot_description testbot.launch

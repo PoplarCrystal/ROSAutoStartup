@@ -1,0 +1,13 @@
+[Unit]
+Description=powerOn startup ros
+ 
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+ExecStart=/usr/sbin/ros_start 
+ExecStop=/usr/sbin/ros_stop
+ExecRestart=/usr/sbin/ros_restart
+ 
+[Install]
+WantedBy=multi-user.target
