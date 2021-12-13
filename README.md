@@ -13,11 +13,11 @@ catkin_make
 # Usage
 ```
 // Open poweron self-startup
-cd [ROS_Workspace]/src/auto_startup
+cd [ROS_Workspace]/src/auto_startup/scripts
 ./config_service.sh
 // Close poweron self-startup
-cd [ROS_Workspace]/src/auto_startup
-./config_service.sh
+cd [ROS_Workspace]/src/auto_startup/scripts
+./uninstall_ros_service.sh
 // Manual operation
 sudo systemctl stop ros_startup.service       // stop service, keep enable/disable when reboot
 sudo systemctl start ros_startup.service      // start service, still enable/disable when reboot
